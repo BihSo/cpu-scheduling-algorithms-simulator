@@ -1,0 +1,179 @@
+.button , text-field {
+    -fx-display: inline-block;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-padding: 4px;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-border-width: 0;
+    -fx-background-color: #1de9b6;
+    -fx-text-fill: #000021;
+    -fx-line-height: 1.15;
+    -fx-cursor: hand;
+    -fx-transition: all 5.3s ease;
+
+    /* حجم الزر */
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+
+    /* تأثير 3D */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.5, 2, 2);
+}
+
+.button:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 2, 0.5, 1, 1); /* تقليل الظل عند الضغط */
+    -fx-translate-y: 2px; /* يعطي إحساس الحركة */
+}
+
+.button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(29, 233, 182, 0.7), 3, 1, 0, 0); /* تأثير عند التمرير */
+}
+
+.table-view {
+    -fx-background-color: #f9f9f9; /* لون خلفية الجدول */
+    -fx-border-color: #dcdcdc; /* لون حدود الجدول */
+    -fx-border-radius: 10px; /* زوايا مستديرة */
+    -fx-background-radius: 10px; /* زوايا خلفية مستديرة */
+    -fx-padding: 5px; /* المسافات الداخلية */
+    -fx-font-size: 14px; /* حجم النص */
+    -fx-font-family: "Arial"; /* خط النص */
+}
+
+.table-view .column-header {
+    -fx-background-color: #1de9b6; /* لون خلفية عنوان الأعمدة */
+    -fx-text-fill: white; /* لون النص في العنوان */
+    -fx-font-weight: bold; /* نص غامق */
+    -fx-border-width: 0 0 2px 0; /* حدود سفلية للعناوين */
+    -fx-border-color: #ccc; /* لون الحدود */
+}
+
+.table-view .column-header .label {
+    -fx-alignment: center; /* محاذاة النص للوسط */
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff; /* لون خلفية الصفوف */
+    -fx-border-color: #f0f0f0; /* لون حدود الصفوف */
+    -fx-border-width: 0 0 1px 0; /* حدود سفلية */
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #e0f7fa; /* لون الخلفية عند تمرير الفأرة */
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #1de9b6; /* لون الصف المحدد */
+    -fx-text-fill: white; /* لون النص للصف المحدد */
+}
+
+.table-cell {
+    -fx-padding: 8px; /* المسافات الداخلية للخلية */
+    -fx-alignment: center; /* محاذاة النص */
+}
+
+.combo-box {
+    -fx-background-color: #ffffff; /* خلفية الكومبو بوكس */
+    -fx-border-color: #1de9b6; /* لون حدود */
+    -fx-border-radius: 5px; /* زوايا مستديرة */
+    -fx-padding: 2px; /* الحواف الداخلية */
+    -fx-font-size: 14px; /* حجم الخط */
+    -fx-font-family: "Arial"; /* نوع الخط */
+    -fx-text-fill: #000021; /* لون النص */
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #1de9b6; /* خلفية زر السهم */
+    -fx-border-radius: 0 5px 5px 0; /* زوايا مستديرة للزر فقط */
+    -fx-padding: 0 10px; /* المسافات الداخلية للزر */
+}
+
+.combo-box:hover {
+    -fx-border-color: #00c9a7; /* لون الحدود عند التمرير */
+    -fx-background-color: #f0f0f0; /* لون خلفية عند التمرير */
+}
+
+.combo-box:focused {
+    -fx-border-color: #1de9b6; /* لون الحدود عند التركيز */
+    -fx-background-color: #ffffff; /* لون خلفية عند التركيز */
+}
+
+.combo-box-popup {
+    -fx-background-color: #ffffff; /* لون خلفية القائمة */
+    -fx-border-color: #1de9b6; /* لون حدود القائمة */
+    -fx-border-radius: 5px; /* زوايا مستديرة */
+}
+
+.list-cell {
+    -fx-padding: 5px; /* الحواف الداخلية للخلايا */
+    -fx-font-size: 14px; /* حجم النص في القائمة */
+    -fx-text-fill: #000021; /* لون النص في القائمة */
+}
+
+.list-cell:hover {
+    -fx-background-color: #e0f7fa; /* لون خلفية الخلية عند التمرير */
+    -fx-text-fill: #000021; /* لون النص عند التمرير */
+}
+
+.list-cell:selected {
+    -fx-background-color: #1de9b6; /* لون الخلية المحددة */
+    -fx-text-fill: white; /* لون النص للخلية المحددة */
+}
+
+
+.text-field, .combo-box {
+    -fx-background-color: #ffffff; /* لون خلفية الحقل */
+    -fx-border-color: #1de9b6; /* لون الحدود */
+    -fx-border-radius: 5px; /* زوايا مستديرة */
+    -fx-background-radius: 5px; /* زوايا خلفية مستديرة */
+    -fx-padding: 5px; /* مسافات داخلية */
+    -fx-font-size: 14px; /* حجم النص */
+    -fx-font-family: "Arial"; /* نوع الخط */
+    -fx-text-fill: #000021; /* لون النص */
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #00c9a7; /* لون الحدود عند التركيز */
+    -fx-background-color: #ffffff; /* لون الخلفية عند التركيز */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 1); /* تأثير ظل عند التركيز */
+}
+
+.text-field:disabled, .combo-box:disabled {
+    -fx-background-color: #f0f0f0; /* لون الخلفية عند التعطيل */
+    -fx-border-color: #dcdcdc; /* لون الحدود عند التعطيل */
+    -fx-text-fill: #a0a0a0; /* لون النص عند التعطيل */
+}
+
+.combo-box:hover .arrow-button {
+    -fx-background-color: #00c9a7; /* لون الزر عند التمرير */
+}
+
+.table-view .scroll-bar:horizontal {
+    -fx-opacity: 0; /* إخفاء شريط التمرير الأفقي */
+    -fx-pref-height: 0; /* تقليل ارتفاعه */
+}
+.table-view .scroll-bar:vertical {
+    -fx-opacity: 0.7; /* إخفاء شريط التمرير الأفقي */
+    -fx-pref-width: 12; /* تقليل ارتفاعه */
+}
+
+.table-view {
+    -fx-focus-traversable: false; /* تعطيل حركة التركيز */
+    -fx-max-width: Infinity;      /* منع القيود الأفقية */
+}
+
+.text-field {
+    -fx-background-radius: 50px; /* خلفية زر السهم */
+    -fx-border-radius: 50px; /* زوايا مستديرة للزر */
+}
+
+
+
+#vb {
+    -fx-background-color: #f0f0f0; /* لون خلفية الـ VBox */
+    -fx-border-color: #1de9b6; /* لون الحدود */
+    -fx-border-width: 1.5px; /* عرض الحدود */
+    -fx-border-radius: 10px; /* زوايا مستديرة للحدود */
+    -fx-background-radius: 10px; /* زوايا مستديرة للخلفية */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0, 0, 4); /* تأثير ظل */
+}
